@@ -1,7 +1,7 @@
 # Mini Programming project
 
 ## Group Information
-**Class:** B
+**Class:** B<br>
 **Group:** 1
 
 ### Group Members
