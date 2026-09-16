@@ -79,7 +79,9 @@ The flowchart is created using Flowgorithm.
 
 File:
 
-[flowchart.fprg](flowchart.fprg)
+[flowchart.fprg](flowchart.fprg)<br>
+[flowchart.png](flowchart.png)
+
 
 ---
 
