@@ -53,6 +53,40 @@ The program receives:
 
 This program calculate how much cost we should spend on each trip.
 
+Output: "Masukkan jenis perjalanan"
+Input:
+- If "1. Sekali Jalan" → The program will count totalJarak "Jarak"
+- If "2. Pulang-Pergi" → The program will count totalJarak "Jarak*2"
+
+Output: "Masukkan jarak perjalanan (km)"
+input: Jarak
+
+Output: "Masukkan efisiensi bahan bakar (km/liter)"
+Input: EfisiensiBBM
+
+Output: "Masukkan harga bahan bakar per liter (Rp)"
+Input: hargaBBM
+
+Operator Aritmatika untuk menghitung konsumsi BBM dan total biaya
+KonsumsiBBM ← totalJarak / efisiensiBBM
+TotalBiaya  ← konsumsiBBM * hargaBBM
+
+Output hasil perhitungan:
+"----------------------------------------"
+"HASIL PERHITUNGAN BIAYA PERJALANAN"
+"----------------------------------------"
+
+"Total Jarak Perjalanan : ", totalJarak, " km"
+"Konsumsi Bahan Bakar : ", konsumsiBBM, " liter"
+"Total Biaya Bahan Bakar: Rp ", totalBiaya
+
+"----------------------------------------"
+
+Output: "Apakah Anda ingin menghitung perjalanan lain? (YES or NO)"
+input:
+- If "YES" → 
+- If "NO"  →
+
 ---
 
 ## 7. Output
@@ -89,7 +123,7 @@ File:
 
 The JavaScript implementation of the program is available in:
 
-`program.js`
+[program.js](program.js)
 
 ---
 
