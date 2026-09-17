@@ -67,20 +67,15 @@ Input: EfisiensiBBM
 Output: "Masukkan harga bahan bakar per liter (Rp)"
 Input: hargaBBM
 
-Operator Aritmatika untuk menghitung konsumsi BBM dan total biaya
-KonsumsiBBM ← totalJarak / efisiensiBBM
+Operator Aritmatika untuk menghitung konsumsi BBM dan total biaya<br>
+KonsumsiBBM ← totalJarak / efisiensiBBM<br>
 TotalBiaya  ← konsumsiBBM * hargaBBM
 
 Output hasil perhitungan:
-"----------------------------------------"
-"HASIL PERHITUNGAN BIAYA PERJALANAN"
-"----------------------------------------"
-
-"Total Jarak Perjalanan : ", totalJarak, " km"
-"Konsumsi Bahan Bakar : ", konsumsiBBM, " liter"
-"Total Biaya Bahan Bakar: Rp ", totalBiaya
-
-"----------------------------------------"
+"HASIL PERHITUNGAN BIAYA PERJALANAN"<br>
+"Total Jarak Perjalanan : ", totalJarak, " km"<br>
+"Konsumsi Bahan Bakar : ", konsumsiBBM, " liter"<br>
+"Total Biaya Bahan Bakar: Rp ", totalBiaya<br>
 
 Output: "Apakah Anda ingin menghitung perjalanan lain? (YES or NO)"
 input:
