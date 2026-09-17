@@ -1,4 +1,4 @@
-// Variabel dan Tipe Data
+﻿// Variabel dan Tipe Data
 jarak : Real
 efisiensiBBM : Real
 hargaBBM : Real
@@ -9,54 +9,54 @@ jenisPerjalanan : Integer
 ulangi : String
 
 
-    // Menampilkan Menu Pilihan Jenis Perjalanan
-    OUTPUT "=== TRAVEL COST CALCULATOR ==="
-    OUTPUT "Masukkan jenis perjalanan:"
-    OUTPUT "1. Sekali Jalan"
-    OUTPUT "2. Pulang-Pergi"
+        // Menampilkan Menu Pilihan Jenis Perjalanan
+        OUTPUT "=== TRAVEL COST CALCULATOR ==="
+        OUTPUT "Masukkan jenis perjalanan:"
+        OUTPUT "1. Sekali Jalan"
+        OUTPUT "2. Pulang-Pergi"
 
-    INPUT jenisPerjalanan
-
-
-    // Meminta informasi perjalanan (Input)
-    OUTPUT "Masukkan jarak perjalanan (km): "
-    INPUT jarak
-
-    OUTPUT "Masukkan efisiensi bahan bakar (km/liter): "
-    INPUT efisiensiBBM
-
-    OUTPUT "Masukkan harga bahan bakar per liter (Rp): "
-    INPUT hargaBBM
+        INPUT jenisPerjalanan
 
 
-    // Percabangan (if-else) untuk menentukan total jarak berdasarkan jenis perjalanan
-    IF jenisPerjalanan == 2 THEN
-        totalJarak <- jarak * 2
-    ELSE
-        totalJarak <- jarak
-    end if
+        // Meminta informasi perjalanan (Input)
+        OUTPUT "Masukkan jarak perjalanan (km): "
+        INPUT jarak
+
+        OUTPUT "Masukkan efisiensi bahan bakar (km/liter): "
+        INPUT efisiensiBBM
+
+        OUTPUT "Masukkan harga bahan bakar per liter (Rp): "
+        INPUT hargaBBM
 
 
-    // Operator Aritmatika untuk menghitung konsumsi BBM dan total biaya
-    konsumsiBBM <- totalJarak / efisiensiBBM
-    totalBiaya <- konsumsiBBM * hargaBBM
+        // Percabangan (if-else) untuk menentukan total jarak berdasarkan jenis perjalanan
+        IF jenisPerjalanan == 2 THEN
+                totalJarak <- jarak * 2
+        ELSE
+                totalJarak <- jarak
+        end if
 
 
-    // Output hasil perhitungan
-    OUTPUT "----------------------------------------"
-    OUTPUT "HASIL PERHITUNGAN BIAYA PERJALANAN"
-    OUTPUT "----------------------------------------"
-
-    OUTPUT "Total Jarak Perjalanan : ", totalJarak, " km"
-    OUTPUT "Konsumsi Bahan Bakar : ", konsumsiBBM, " liter"
-    OUTPUT "Total Biaya Bahan Bakar: Rp ", totalBiaya
-
-    OUTPUT "----------------------------------------"
+        // Operator Aritmatika untuk menghitung konsumsi BBM dan total biaya
+        konsumsiBBM <- totalJarak / efisiensiBBM
+        totalBiaya <- konsumsiBBM * hargaBBM
 
 
-    // Menanyakan apakah ingin menghitung lagi (Kontrol perulangan)
-    OUTPUT "Apakah Anda ingin menghitung perjalanan lain? (YES or NO) : "
-    INPUT ulangi 
+        // Output hasil perhitungan
+        OUTPUT "----------------------------------------"
+        OUTPUT "HASIL PERHITUNGAN BIAYA PERJALANAN"
+        OUTPUT "----------------------------------------"
+
+        OUTPUT "Total Jarak Perjalanan : ", totalJarak, " km"
+        OUTPUT "Konsumsi Bahan Bakar : ", konsumsiBBM, " liter"
+        OUTPUT "Total Biaya Bahan Bakar: Rp ", totalBiaya
+
+        OUTPUT "----------------------------------------"
+
+
+        // Menanyakan apakah ingin menghitung lagi (Kontrol perulangan)
+        OUTPUT "Apakah Anda ingin menghitung perjalanan lain? (YES or NO) : "
+        INPUT ulangi 
 
 while ulangi == "YES" OR ulangi == "YES"
 end while
