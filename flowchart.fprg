@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flowchart"/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-17 09:40:49 AM"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLVMyRlBLUEQ7MjAyNi0wOS0xNzswOTowODowMCBBTTsyNzc0"/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLVMyRlBLUEQ7MjAyNi0wOS0xNzswOTo0MDo0OSBBTTsxOzI4OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jarak, efisiensi, hargaBBM, totalJarak, totalBBM, totalBiaya" type="Real" array="False" size=""/>
+            <declare name="pilihan" type="Integer" array="False" size=""/>
+            <declare name="ulangi" type="String" array="False" size=""/>
+            <assign variable="ulangi" expression="&quot;YES&quot;"/>
+            <while expression="ulangi == &quot;YES&quot; || ulangi == &quot;yes&quot;">
+                <output expression="&quot;=== TRAVEL COST CALCULATOR ===&quot;" newline="True"/>
+                <output expression="&quot;Pilih tipe (1 = Sekali Jalan, 2 = Pulang Pergi):&quot;" newline="True"/>
+                <input variable="pilihan"/>
+                <output expression="&quot;Masukkan jarak perjalanan (km):&quot;" newline="True"/>
+                <input variable="jarak"/>
+                <output expression="&quot;Masukkan efisiensi BBM (km/liter):&quot;" newline="True"/>
+                <input variable="efisiensi"/>
+                <output expression="&quot;Masukkan harga BBM per liter:&quot;" newline="True"/>
+                <input variable="hargaBBM"/>
+                <if expression="pilihan == 2">
+                    <then>
+                        <assign variable="totalJarak" expression="jarak * 2"/>
+                    </then>
+                    <else>
+                        <assign variable="totalJarak" expression="jarak"/>
+                    </else>
+                </if>
+                <assign variable="totalBBM" expression="totalJarak / efisiensi"/>
+                <assign variable="totalBiaya" expression="totalBBM * hargaBBM"/>
+                <output expression="&quot;HASIL PERHITUNGAN BIAYA PERJALANAN&quot;" newline="True"/>
+                <output expression="&quot;Total jarak: &quot; &amp; totalJarak &amp; &quot; km&quot;" newline="True"/>
+                <output expression="&quot;Total BBM: &quot; &amp; totalBBM &amp; &quot; liter&quot;" newline="True"/>
+                <output expression="&quot;Total biaya: Rp &quot; &amp; totalBiaya" newline="True"/>
+                <output expression="&quot;Apakah Anda ingin menghitung perjalanan lain? (YES or NO) : &quot;" newline="True"/>
+                <input variable="ulangi"/>
+            </while>
+            <output expression="&quot;Terima kasih telah menggunakan Travel Cost Calculator!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
