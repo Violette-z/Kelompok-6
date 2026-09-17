@@ -2,7 +2,7 @@
 
 ## 1. Group Information
 **Class:** B<br>
-**Group:** 1
+**Group:** 6
 
 ### Group Members
 | 1 | Diaz Firansyah | 2610312044 | Project Coordinator |<br>
