@@ -51,7 +51,7 @@ The program receives:
 
 ## 6. Process
 
-ntar dulu
+This program calculate how much cost we should spend on each trip.
 
 ---
 
